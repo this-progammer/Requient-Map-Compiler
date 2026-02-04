@@ -74,4 +74,4 @@ def StreamWriteBrushes( stream : MapStream ):
   planecounter = globalMapStreamManager().map_plane_count
 
   if globalMapStreamManager().map_name, globalMapStreamManager().map_extension:
-    print("%s %i/t ( %f )\t ", globalMapStreamManager().stream_brush_char, globalMapStreamManager().map_brush_count[0], globalMapStreamManager().map_vector_world_coords )
+    print("%s %i/t ( %f )\t %s\n", globalMapStreamManager().stream_brush_char, globalMapStreamManager().map_brush_count[0], globalMapStreamManager().map_vector_world_coords, globalMapStreamManager().stream_texdef_char )
