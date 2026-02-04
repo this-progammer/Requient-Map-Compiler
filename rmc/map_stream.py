@@ -16,6 +16,14 @@ class MapStream:
   stream_line_number = [int]
   map_line_section = [str][stream_line_number]
 
+  stream_brush_char = "Brush\t"
+  stream_entity_char = "Entity\t"
+  stream_node_char = "Node\t"
+  stream_caulk_char = "Caulk\t"
+  stream_clip_char = "Clip\t"
+  stream_texdef_char = "BrushPrimitTexdef : ( %s ) \n"
+  stream_position_char = " ( %f, %f, %f )( %f, %f, %f )( %f, %f, %f ) "
+
   """@map variables"""
   map_brush_count = [int]
   map_face_count = [int]
@@ -25,6 +33,7 @@ class MapStream:
   map_texdef_count = [int]
   map_entity_count = [int]
   map_node_count = [int]
+  map_vector_world_coords = ( 0.0, 0.0, 0.0 )
 
   def streamGetMapNodeCount( self ):
     return self.map_node_count
@@ -55,3 +64,6 @@ class MapStream:
 
   def streamGetMapName( self ):
     return self.map_name
+
+
+globalMapStreamManager() = MapStream()
