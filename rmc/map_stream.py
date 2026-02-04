@@ -67,3 +67,11 @@ class MapStream:
 
 
 globalMapStreamManager() = MapStream()
+
+def StreamWriteBrushes( stream : MapStream ):
+  globalMapStreamManager() = stream
+  brushcounter = globalMapStreamManager().map_brush_count
+  planecounter = globalMapStreamManager().map_plane_count
+
+  if globalMapStreamManager().map_name, globalMapStreamManager().map_extension:
+    print("%s %i/t ( %f )\t ", globalMapStreamManager().stream_brush_char, globalMapStreamManager().map_brush_count[0], globalMapStreamManager().map_vector_world_coords )
