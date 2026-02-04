@@ -13,7 +13,8 @@ class MapStream:
   map_date = "__DATE__"
   map_name = MAP_NAME
   map_extension = MAP_EXTENSION
-  map_line_section = [str]
+  stream_line_number = [int]
+  map_line_section = [str][stream_line_number]
 
   """@map variables"""
   map_brush_count = [int]
