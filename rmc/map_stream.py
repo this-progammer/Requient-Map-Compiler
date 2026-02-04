@@ -22,7 +22,30 @@ class MapStream:
   map_caulk_count = [int]
   map_clip_count = [int]
   map_texdef_count = [int]
+  map_entity_count = [int]
+  map_node_count = [int]
 
+  def streamGetMapNodeCount( self ):
+    return self.map_node_count
+
+  def streamGetMapEntityCount( self ):
+    return self.map_entity_count
+
+  def streamGetMapTexdefCount( self ):
+    return self.map_texdef_count
+  
+  def streamGetMapClipCount( self ):
+    return self.map_clip_count
+  
+  def streamGetMapCaulkCount( self ):
+    return self.map_caulk_count
+  
+  def streamGetMapFaceCount( self ):
+    return self.map_face_count
+
+  def streamGetMapPlaneCount( self ):
+    return self.map_plane_count
+  
   def streamGetMapBrushCount( self ):
     return self.map_brush_count
 
